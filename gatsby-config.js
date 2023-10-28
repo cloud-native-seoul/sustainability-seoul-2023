@@ -4,7 +4,7 @@ module.exports = {
     siteMetadata: {
         ...metaConfig
     },
-    pathPrefix: "/sustainability-week",
+    pathPrefix: "/sustainability-seoul-2023",
     plugins: [
         "gatsby-plugin-image",
         "gatsby-plugin-react-helmet",
