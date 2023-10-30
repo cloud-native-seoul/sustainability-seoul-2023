@@ -1,20 +1,13 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
-import useSiteMetaData from "../../hooks/useSiteMetaData";
 import Section from "../../components/section";
 import Content from "../../components/content";
 import * as styles from "./contents.module.css";
 import Pictures from "../pictures";
+import { FormattedMessage } from "react-intl";
 
 export default function Contents() {
-  const { about, session1, session2, session3, sponsors } = useSiteMetaData();
-  const { aboutTitle, aboutContent } = about;
-  const { session1Title, session1Link, session1Content } = session1;
-  const { session2Title, session2Link, session2Content } = session2;
-  const { session3Title, session3Link, session3Content } = session3;
-  const { sponsorTitle, sponsorContent } = sponsors;
-
   const data = useStaticQuery(graphql`
     {
       heroImage: file(relativePath: { eq: "sustainability-week.png" }) {
@@ -49,38 +42,38 @@ export default function Contents() {
     <Section>
       <div className={styles.contents}>
         <Content
-          primaryText={aboutTitle}
+          primaryText={<FormattedMessage id="aboutTitle" />}
           link={""}
-          content={aboutContent}
+          content={<FormattedMessage id="aboutContent" />}
           image={getImage(data?.heroImage)}
           orientation="default"
         />
         <Pictures />
         <Content
-          primaryText={session1Title}
-          link={session1Link}
-          content={session1Content}
+          primaryText={<FormattedMessage id="session1Title" />}
+          link={<FormattedMessage id="session1Link" />}
+          content={<FormattedMessage id="session1Content" />}
           image={getImage(data?.session1Image)}
           orientation="default"
         />
         <Content
-          primaryText={session2Title}
-          link={session2Link}
-          content={session2Content}
+          primaryText={<FormattedMessage id="session2Title" />}
+          link={<FormattedMessage id="session2Link" />}
+          content={<FormattedMessage id="session2Content" />}
           image={getImage(data?.session2Image)}
           orientation="default"
         />
         <Content
-          primaryText={session3Title}
-          link={session3Link}
-          content={session3Content}
+          primaryText={<FormattedMessage id="session3Title" />}
+          link={<FormattedMessage id="session3Link" />}
+          content={<FormattedMessage id="session3Content" />}
           image={getImage(data?.session3Image)}
           orientation="default"
         />
         <Content
-          primaryText={sponsorTitle}
+          primaryText={<FormattedMessage id="sponsorTitle" />}
           link={""}
-          content={sponsorContent}
+          content={<FormattedMessage id="sponsorContent" />}
           image={getImage(data?.sponsorImage)}
           orientation="default"
         />

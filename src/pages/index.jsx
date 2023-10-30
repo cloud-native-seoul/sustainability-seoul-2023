@@ -3,24 +3,20 @@ import Layout from "../layout";
 import Page from "../components/page";
 import Hero from "../sections/hero";
 import Container from "../components/container";
-import useSiteMetaData from "../hooks/useSiteMetaData";
 import Contents from "../sections/contents";
+import SimpleLocalize from "../SimpleLocalize";
 
-export default function LandingPage() {
-  const { hero } = useSiteMetaData();
-  const { heroHeading, heroSecondaryHeading, heroContent } = hero;
+export default function LandingPage(props) {
   return (
-    <Layout>
-      <Page>
-        <Container>
-          <Hero
-            heading={heroHeading}
-            secondaryHeading={heroSecondaryHeading}
-            content={heroContent}
-          />
-          <Contents />
-        </Container>
-      </Page>
-    </Layout>
+    <SimpleLocalize {...props}>
+      <Layout>
+        <Page>
+          <Container>
+            <Hero />
+            <Contents />
+          </Container>
+        </Page>
+      </Layout>
+    </SimpleLocalize>
   );
 }
