@@ -39,6 +39,14 @@
     width: 100%;
 }
 
+.left {
+    text-align: justify;
+}
+
+.right {
+    text-align: justify;
+}
+
 @media screen and (min-width: 768px) {
     .contentContainer {
         flex-direction: row;
