@@ -48,8 +48,8 @@ export default function Hero() {
               <FormattedMessage id="digitaldaily" />
             </a>
             ,{" "}
-            <a href="https://blog.alyac.co.kr/5270">
-              <FormattedMessage id="est" />
+            <a href="http://www.itdaily.kr/news/articleView.html?idxno=217029">
+              <FormattedMessage id="itdaily" />
             </a>
             <FormattedMessage id="heroContent2" />
           </p>

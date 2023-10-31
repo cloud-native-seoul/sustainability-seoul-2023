@@ -25,7 +25,7 @@
         "openstack": "OpenStack Korea Community",
         "ubuntu": "Ubuntu Korea Community",
         "digitaldaily": "Digital Daily",
-        "est": "ESTsecurity"
+        "itdaily": "IT Daily"
     },
     "ko" : {
         "heroHeading": "Cloud Native Sustainability Week in Seoul",
@@ -53,6 +53,6 @@
         "openstack": "OpenStack 한국 커뮤니티",
         "ubuntu": "우분투 한국 커뮤니티",
         "digitaldaily": "디지털 데일리",
-        "est":"이스트 시큐리티"
+        "itdaily":"아이티 데일리"
     }
 }
