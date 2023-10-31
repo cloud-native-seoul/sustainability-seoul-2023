@@ -23,7 +23,9 @@
         "jumpit": "Jumpit",
         "itinfra": "IT&Infra Engineer Group",
         "openstack": "OpenStack Korea Community",
-        "ubuntu": "Ubuntu Korea Community"
+        "ubuntu": "Ubuntu Korea Community",
+        "digitaldaily": "Digital Daily",
+        "est": "ESTsecurity"
     },
     "ko" : {
         "heroHeading": "Cloud Native Sustainability Week in Seoul",
@@ -49,6 +51,8 @@
         "jumpit": "점핏",
         "itinfra": "IT 인프라 엔지니어 그룹",
         "openstack": "OpenStack 한국 커뮤니티",
-        "ubuntu": "우분투 한국 커뮤니티"
+        "ubuntu": "우분투 한국 커뮤니티",
+        "digitaldaily": "디지털 데일리",
+        "est":"이스트 시큐리티"
     }
 }

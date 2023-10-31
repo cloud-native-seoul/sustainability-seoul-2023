@@ -21,7 +21,8 @@ export default function Hero() {
       <div className={styles.root}>
         <div className={styles.content}>
           <h2 className={styles.secondaryHeading}>
-            Language: {<a href="/ko">Kor</a>} | {<a href="/">Eng</a>}
+            Language: {<a href="/sustainability-seoul-2023/ko">Kor</a>} |{" "}
+            {<a href="/sustainability-seoul-2023/">Eng</a>}
           </h2>
           <h2 className={styles.secondaryHeading}>
             <FormattedMessage id="heroSecondaryHeading" />
@@ -41,6 +42,14 @@ export default function Hero() {
             ,{" "}
             <a href="https://www.jumpit.co.kr/contents/422">
               <FormattedMessage id="jumpit" />
+            </a>
+            ,{" "}
+            <a href="https://ddaily.co.kr/page/view/2023100417170548875">
+              <FormattedMessage id="digitaldaily" />
+            </a>
+            ,{" "}
+            <a href="https://blog.alyac.co.kr/5270">
+              <FormattedMessage id="est" />
             </a>
             <FormattedMessage id="heroContent2" />
           </p>
